@@ -69,7 +69,7 @@ public class SaveSelectionMenu : Menu
 		Subtexture image = strawberryImage;
 		Vec2 imageSize = new Vector2(size.X / image.Width, size.Y / image.Height);
 		batch.Image(image, (pos - (size * imgScale) / 2) * Game.RelativeScale, imageSize * imgScale * Game.RelativeScale, imageSize * imgScale * Game.RelativeScale, 0, Color.White);
-		batch.PushMatrix(Matrix3x2.CreateScale(.7f) * Matrix3x2.CreateTranslation((pos + new Vec2(0, size.Y * 0.4f)) * Game.RelativeScale));
+		batch.PushMatrix(Matrix3x2.CreateScale(.6f) * Matrix3x2.CreateTranslation((pos + new Vec2(0, size.Y * 0.4f)) * Game.RelativeScale));
 		batch.Text(Language.Current.SpriteFont, save, Vec2.Zero, new Vec2(0.5f, 0), new Color(0x98d3ae));
 		batch.PopMatrix();
 	}
